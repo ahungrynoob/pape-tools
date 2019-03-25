@@ -1,0 +1,46 @@
+{
+  "name": "pape-tools",
+  "version": "0.0.1",
+  "description": "A tool for react component dev",
+  "bin": {
+    "pape-tools": "./bin/pape-tools.js",
+    "pape-tools-run": "./bin/pape-tools-run.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahungrynoob/pape-tools.git"
+  },
+  "keywords": [
+    "react",
+    "dev",
+    "tool"
+  ],
+  "author": "dxd_sjtu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahungrynoob/pape-tools/issues"
+  },
+  "homepage": "https://github.com/ahungrynoob/pape-tools#readme",
+  "devDependencies": {
+    "lint-staged": "^8.1.5"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.2",
+    "colorful": "^2.1.0",
+    "commander": "^2.19.0",
+    "eslint": "^5.15.3",
+    "eslint-config-beidou": "^2.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "gulp": "^4.0.0",
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.4000"
+  }
+}
