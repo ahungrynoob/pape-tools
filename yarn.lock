@@ -4142,6 +4142,16 @@ gulp-postcss@^8.0.0:
     postcss-load-config "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
+gulp-prettier@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-prettier/-/gulp-prettier-2.1.0.tgz#6e7b2a12395315fb9e1ebd4ea9ed9514410aec15"
+  integrity sha512-6PvGPX+x0d1+PbP7tHF42o6zWzxCXqouTnpwZV1GjF47/wAgWBfPU1E6/6d4uAGM+NhmwWdKvIVumL3wMZZxDg==
+  dependencies:
+    plugin-error "^1.0.1"
+    prettier "^1.5.3"
+    safe-buffer "^5.1.2"
+    through2 "^3.0.0"
+
 gulp-typescript@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/gulp-typescript/-/gulp-typescript-5.0.1.tgz#96c6565a6eb31e08c2aae1c857b1a079e6226d94"
@@ -7355,7 +7365,7 @@ prepend-http@^1.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-prettier@^1.16.4:
+prettier@^1.16.4, prettier@^1.5.3:
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
   integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
