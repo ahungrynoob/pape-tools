@@ -31,3 +31,7 @@ It will check dependencies in your source code under `${cwd}/src` dir with pkg.j
 It will restrain developers from using cutom-defined npm publish, they should use `pape-tools run pub`.
 <br />
 Tip: You'd better set `"prepublish": "pape-tools run guard"` in pkg.json's `scripts`;
+
+### test
+
+It will run uni tests you created in cwd;
