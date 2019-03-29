@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "strict": true,
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es2016",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "rootDirs": [
+      "/Users/xudading/work/opensource/pape-tools-playground/src",
+      "/Users/xudading/work/opensource/pape-tools-playground/typings"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowJs": false,
+    "noImplicitThis": false,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "/Users/xudading/work/opensource/pape-tools-playground/src",
+    "/Users/xudading/work/opensource/pape-tools-playground/typings/"
+  ],
+  "typings": "./typings/index.d.ts",
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
+}

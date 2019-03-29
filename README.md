@@ -30,8 +30,20 @@ It will check dependencies in your source code under `${cwd}/src` dir with pkg.j
 
 It will restrain developers from using cutom-defined npm publish, they should use `pape-tools run pub`.
 <br />
-Tip: You'd better set `"prepublish": "pape-tools run guard"` in pkg.json's `scripts`;
+Tip: You'd better set `"prepublish": "pape-tools run guard"` in pkg.json's `scripts`.
 
 ### test
 
-It will run uni tests you created in cwd;
+It will run uni tests you created in cwd.
+
+### webpack
+
+It will webpackify the files under `examples` dir into `build` dir in cwd. **If you want to make a entry for `examples/sample.js`, you should create an empty `examples/sample.html` file.**
+
+### build
+
+It will generate the examples html file that you could push to your gh-pages branch to show.
+
+### gh-pages
+
+It will push the examples files under `build` dir to your gh-pages branch.
