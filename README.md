@@ -64,3 +64,36 @@ It will babelify `src/**/*.{ts,tsx,js,jsx}` into `es` dir as es module.
 ### compile
 
 It will execute `pape-tools run css`, `pape-tools run js` and `pape-tools run es` in parallel.
+
+### genPrettierrc
+
+It will generate `.prettierrc` in cwd;
+
+### genEslint
+
+It will generate `.eslintrc.js` in cwd;
+
+### genTslint
+
+It will generate `tslint.json` and `tsconfig.json` in cwd;
+
+### gen-lint-config
+
+It will execute `genPrettierrc`, `genEslint` and `genTslint` in parallel.
+
+### prettier
+
+It will prettier `.js` and `.jsx` code style in `src`,`tests`,`code`,`storybook`,`examples` dirs;.
+
+### js-lint
+
+It will check dependencies first, then eslint your `.jsx` and `.js` code under `src`, `examples` and `tests` dirs.
+<br /> **You can custom your own lint config by creating .eslintc.js in cwd.**  
+
+### ts-lint
+
+It will check dependencies first, then tslint your `.tsx` and `.ts` code under `src`, `examples` and `tests` dirs.
+<br /> **You can custom your own lint config by creating tslint.json in cwd.**
+
+### lint
+It will execute `pape-tools run ts-lint` and `pape-tools run js-lint` in series.
