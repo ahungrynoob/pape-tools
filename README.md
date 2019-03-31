@@ -34,7 +34,7 @@ Tip: You'd better set `"prepublish": "pape-tools run guard"` in pkg.json's `scri
 
 ### test
 
-It will run uni tests you created in cwd.
+It will run uni tests you created in cwd.(using jest)
 
 ### webpack
 
@@ -88,7 +88,7 @@ It will prettier `.js` and `.jsx` code style in `src`,`tests`,`code`,`storybook`
 ### js-lint
 
 It will check dependencies first, then eslint your `.jsx` and `.js` code under `src`, `examples` and `tests` dirs.
-<br /> **You can custom your own lint config by creating .eslintc.js in cwd.**  
+<br /> **You can custom your own lint config by creating .eslintc.js in cwd.**
 
 ### ts-lint
 
@@ -96,4 +96,13 @@ It will check dependencies first, then tslint your `.tsx` and `.ts` code under `
 <br /> **You can custom your own lint config by creating tslint.json in cwd.**
 
 ### lint
+
 It will execute `pape-tools run ts-lint` and `pape-tools run js-lint` in series.
+
+### pre-commit
+
+It will execute `pape-tools run prettier` and `pape-tools run lint` in series.
+
+### pub
+
+It will excute `pape-tools run publish`, `pape-tools run gh-pages` and tag the version in pkg.json to git.
