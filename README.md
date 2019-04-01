@@ -10,6 +10,11 @@ cli tools for react component developer based on storybook.
 [download-image]: https://img.shields.io/npm/dm/pape-tools.svg?style=flat-square
 [download-url]: https://npmjs.org/package/pape-tools
 
+## Install
+
+`npm install pape-tools --save-dev`
+`yarn add -D pape-tools`
+
 ## Usage
 
 ```

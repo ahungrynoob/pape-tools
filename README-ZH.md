@@ -10,6 +10,11 @@
 [download-image]: https://img.shields.io/npm/dm/pape-tools.svg?style=flat-square
 [download-url]: https://npmjs.org/package/pape-tools
 
+## 安装
+
+`npm install pape-tools --save-dev`
+`yarn add -D pape-tools`
+
 ## 用法
 
 ```
