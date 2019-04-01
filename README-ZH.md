@@ -106,3 +106,76 @@ $ pape-tools run ${cli}
 ### pub
 
 将会顺序执行 `pape-tools run publish`, `pape-tools run gh-pages` 并根据`package.json`中的 version 打上 git 标签。
+
+### storybook
+
+开发模式下执行 storybook，可以在 storybook 模式中调试 React Component。
+
+### storybook-build
+
+生成 storybook 的静态文件。
+
+## 最佳实践
+
+### 目录规范：
+
+```bash
+. helloweb
+├── package.json
+├── index.js (React Component的入口文件，如果不存在，则会查找src/index.js)
+├── assets (在这里放置css或者less文件)
+├── examples (这里放置案例代码，案例代码样本见下方)
+├── src (组件源码)
+├── typings (.d.ts文件)
+├── storybook (storybook的加载文件以.stories.js结尾)
+└── tests (jest单元测试代码)
+```
+
+### pkg.json 中的 scripts 等配置
+
+--babel-runtime 参数根据需求添加
+
+```json
+{
+  "scripts": {
+    "build": "pape-tools run storybook-build",
+    "compile": "pape-tools run compile --babel-runtime",
+    "start": "pape-tools run storybook",
+    "pub": "pape-tools run pub --babel-runtime",
+    "lint": "pape-tools run lint",
+    "lint:fix": "pape-tools run lint --fix",
+    "prettier": "pape-tools run prettier",
+    "test": "pape-tools run test",
+    "prepublish": "pape-tools run guard",
+    "init-tslint": "pape-tools run gen-lint-config",
+    "coverage": "pape-tools run test --coverage",
+    "pre-commit": "pape-tools run pre-commit",
+    "lint-staged": "lint-staged"
+  },
+  "devDependencies": {
+    "pre-commit": "1.x"
+  },
+  "pre-commit": ["lint-staged"],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["npm run pre-commit", "git add"]
+  }
+}
+```
+
+### examples/Sample.tsx 代码示范
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Sample from '../src/index';
+import './Sample.less';
+
+interface SampleWrapperProps {}
+
+const SampleWrapper: React.FunctionComponent<SampleWrapperProps> = props => {
+  return <Sample />;
+};
+
+// You need to add this line, and create an empty `Sample.html` for this example.
+ReactDOM.render(<SampleWrapper />, document.getElementById('__react-content'));
+```

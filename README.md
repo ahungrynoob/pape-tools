@@ -106,3 +106,76 @@ It will execute `pape-tools run prettier` and `pape-tools run lint` in series.
 ### pub
 
 It will excute `pape-tools run publish`, `pape-tools run gh-pages` and tag the version in pkg.json to git.
+
+### storybook
+
+Run Storybook in a dev mode.(You can use this cli to dev your react component)
+
+### storybook-build
+
+Build static version of Storybook.
+
+## Best Practice
+
+### project structure：
+
+```bash
+. helloweb
+├── package.json
+├── index.js (entry file for webpack, if not exists will look for src/index.js)
+├── assets (put less or css file here)
+├── examples (put example code here, there is demo code below.)
+├── src (your source code)
+├── typings (.d.ts file)
+├── storybook (the config file for storybook, ending with .stories.js)
+└── tests (jest uni test)
+```
+
+### scripts in pkg.json and some other config
+
+--babel-runtime added on demand
+
+```json
+{
+  "scripts": {
+    "build": "pape-tools run storybook-build",
+    "compile": "pape-tools run compile --babel-runtime",
+    "start": "pape-tools run storybook",
+    "pub": "pape-tools run pub --babel-runtime",
+    "lint": "pape-tools run lint",
+    "lint:fix": "pape-tools run lint --fix",
+    "prettier": "pape-tools run prettier",
+    "test": "pape-tools run test",
+    "prepublish": "pape-tools run guard",
+    "init-tslint": "pape-tools run gen-lint-config",
+    "coverage": "pape-tools run test --coverage",
+    "pre-commit": "pape-tools run pre-commit",
+    "lint-staged": "lint-staged"
+  },
+  "devDependencies": {
+    "pre-commit": "1.x"
+  },
+  "pre-commit": ["lint-staged"],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["npm run pre-commit", "git add"]
+  }
+}
+```
+
+### examples/Sample.tsx demo
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Sample from '../src/index';
+import './Sample.less';
+
+interface SampleWrapperProps {}
+
+const SampleWrapper: React.FunctionComponent<SampleWrapperProps> = props => {
+  return <Sample />;
+};
+
+// You need to add this line, and create an empty `Sample.html` for this example.
+ReactDOM.render(<SampleWrapper />, document.getElementById('__react-content'));
+```
