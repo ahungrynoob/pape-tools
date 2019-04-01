@@ -2,6 +2,14 @@
 
 cli tools for react component developer based on storybook.
 
+[![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: https://img.shields.io/npm/v/pape-tools.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/pape-tools
+[download-image]: https://img.shields.io/npm/dm/pape-tools.svg?style=flat-square
+[download-url]: https://npmjs.org/package/pape-tools
+
 ## Usage
 
 ```
