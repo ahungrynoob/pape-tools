@@ -13,6 +13,7 @@
 ## 安装
 
 `npm install pape-tools --save-dev`
+<br />
 `yarn add -D pape-tools`
 
 ## 用法
