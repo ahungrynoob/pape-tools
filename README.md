@@ -13,6 +13,7 @@ cli tools for react component developer based on storybook.
 ## Install
 
 `npm install pape-tools --save-dev`
+<br />
 `yarn add -D pape-tools`
 
 ## Usage
