@@ -2939,7 +2939,7 @@ babel-preset-jest@^24.3.0:
     "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
     babel-plugin-jest-hoist "^24.3.0"
 
-babel-preset-minify@^0.5.0, "babel-preset-minify@^0.5.0 || 0.6.0-alpha.5":
+"babel-preset-minify@^0.5.0 || 0.6.0-alpha.5":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-preset-minify/-/babel-preset-minify-0.5.0.tgz#e25bb8d3590087af02b650967159a77c19bfb96b"
   integrity sha512-xj1s9Mon+RFubH569vrGCayA9Fm2GMsCgDRm1Jb8SgctOB7KFcrVc2o8K3YHUyMz+SWP8aea75BoS8YfsXXuiA==
@@ -5900,17 +5900,6 @@ gud@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
   integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
-
-gulp-babel-minify@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gulp-babel-minify/-/gulp-babel-minify-0.5.0.tgz#ef19dd4c85dddeac37cc9808414543daed24f29b"
-  integrity sha512-6YrHnLXSizWHITQ3mcwmPbn0ygXIf8CCk7Dv345Cp10kPE9iqBRwfuU8GhG98Y5IwWGAVOWNp2vo6bLanbqCpA==
-  dependencies:
-    "@babel/core" "^7.1.0"
-    babel-preset-minify "^0.5.0"
-    plugin-error "^1.0.1"
-    through2 "^2.0.3"
-    vinyl-sourcemaps-apply "^0.2.1"
 
 gulp-babel@^8.0.0:
   version "8.0.0"
