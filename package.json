@@ -1,6 +1,6 @@
 {
   "name": "pape-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool for react component dev",
   "bin": {
     "pape-tools": "./bin/pape-tools.js",
